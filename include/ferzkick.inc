@@ -84,3 +84,13 @@ hook OnGameModeInit()
     print("========================================");
     return 1;
 }
+
+hook OnFilterScriptInit()
+{
+    print("========================================");
+    print("   ferzkick SUPER PHYSICS SUITE V2     ");
+    print("   Owner: FERZDEVZ / FERDINAND         ");
+    print("   Status: ALL SYSTEMS NOMINAL         ");
+    print("========================================");
+    return 1;
+}

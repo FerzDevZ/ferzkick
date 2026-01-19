@@ -13,12 +13,24 @@
 #include <ferzkick> // Include sakti buatan Ferdinand
 #include <zcmd>     // Pake ZCMD biar kenceng
 
-main() {
+#if defined FILTERSCRIPT
+public OnFilterScriptInit()
+{
     print("------------------------------------------");
-    print("  FERZKICK EXAMPLE SCRIPT BY FERZDEVZ     ");
+    print("  FERZKICK FS BY FERZDEVZ LOADED          ");
+    print("  Status: READY TO KICK!                  ");
+    print("------------------------------------------");
+    return 1;
+}
+#else
+main() 
+{
+    print("------------------------------------------");
+    print("  FERZKICK GAMEMODE BY FERZDEVZ LOADED    ");
     print("  Status: READY TO KICK!                  ");
     print("------------------------------------------");
 }
+#endif
 
 // --- Logic Callback (Opsional buat Dev) ---
 public OnPlayerKickVehicle(playerid, vehicleid, Float:force)
@@ -83,7 +95,7 @@ stock GetNearestVehicle(playerid, Float:range)
     {
         if(GetVehicleModel(i) > 0)
         {
-            new Float:vDist = GetVehicleDistanceToPoint(i, x, y, z);
+            new Float:vDist = GetVehicleDistanceFromPoint(i, x, y, z);
             if(vDist <= minDist)
             {
                 minDist = vDist;
