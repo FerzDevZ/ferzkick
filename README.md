@@ -58,16 +58,6 @@ Gue buat fungsinya se-simple mungkin biar nggak pusing:
 
 ---
 
-## 🪟 Cara Compile ke Windows (.dll)
-
-Kalo lo mau pake di Windows, gue udah buatin sistem **CMake** yang profesional. Caranya:
-1.  Buka folder `plugin/src`.
-2.  Klik 2x file `build_win.bat`.
-3.  Script itu bakal otomatis bikin folder `build` dan compile pake Visual Studio lo.
-4.  Cek di folder `build/Release`, lo bakal nemu `ferzkick.dll`.
-
----
-
 ## 📜 Pesan dari Ferdinand
 Project ini gue kasih gratis buat komunitas. Gue cuma minta satu hal: **Jangan hapus credit-nya!** Hargai capeknya gue ngitung matematika fisika di C++ buat kalian semua.
 
